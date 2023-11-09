@@ -15,10 +15,10 @@
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} -->
   <header>
-    <button>Menu</button>
+    <button @click="menuIsOpen = true">Ouvrir</button>
     <h1>Test de menu</h1>
   </header>
-  <nav id="mainNav">
+  <nav id="mainNav" x-show="menuIsOpen">
     <ul>
       <li><a href="#">item 1</a></li>
       <li><a href="#">item 2</a></li>
