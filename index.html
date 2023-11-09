@@ -14,7 +14,9 @@
   <!-- https://emmet.io/ -->
   <!-- header>h1{Test de menu} -->
   <header>
-    <button>Menu</button>
+    <button @click="menuIsOpen = true">ouvrir</button>
+    <button @click="menuIsOpen = false">fermer</button>
+    <button @click="menuIsOpen = ! menuIsOpen">ouvrir/fermer</button>
     <h1>Test de menu</h1>
   </header>
   <nav id="mainNav" x-show="menuIsOpen">
